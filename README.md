@@ -1,4 +1,4 @@
-# Pikachu Battle Simulator
+# LLMonster Battle Simulator
 
 This project simulates a Pokémon-style battle between two Pikachu agents controlled by GPT-based logic using the OpenAI API.
 
