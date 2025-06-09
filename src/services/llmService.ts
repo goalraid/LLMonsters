@@ -11,7 +11,7 @@ interface LLMConfig {
 // Default configuration - you can change this
 const DEFAULT_CONFIG: LLMConfig = {
   provider: 'ollama',
-  baseURL: '/ollama-api/v1',
+  baseURL: window.location.origin + '/ollama-api/v1',
   model: 'llama2',
   apiKey: 'ollama' // Required but not used for Ollama
 }
@@ -99,7 +99,7 @@ export const llmService = new LLMService()
 export const LLM_PRESETS = {
   ollama: {
     provider: 'ollama' as const,
-    baseURL: '/ollama-api/v1',
+    baseURL: window.location.origin + '/ollama-api/v1',
     model: 'llama2',
     apiKey: 'ollama'
   },
